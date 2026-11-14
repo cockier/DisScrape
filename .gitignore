@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.egg-info/
+input/tokens.txt
+output/**
+!output/**/
+!output/**/.gitkeep
+.env
+.env.*
+build/
+dist/
+*.pyc

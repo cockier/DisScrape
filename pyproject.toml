@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DisScrape"
+version = "0.1.0"
+description = "Async Discord profile collector"
+requires-python = ">=3.11"
+dependencies = [
+  "aiohttp>=3.12,<4",
+  "richer-tui @ git+https://github.com/cockier/richer.git@cdce1e23e6cfe8459a0fef2486d086da3fc681ed",
+]
+
+[project.scripts]
+disscrape = "disscrape.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
